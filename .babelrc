@@ -1,0 +1,23 @@
+{
+  "presets": ["babel-preset-expo"],
+  "env": {
+    "development": {
+      "plugins": ["transform-react-jsx-source"]
+    }
+  },
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "@components": "./app/components",
+        "@featured": "./app/features",
+        "@navigation": "./app/navigation",
+        "@navigators": "./app/navigation/navigators",
+        "@styles": "./app/styles",
+        "@assets": "./assets",
+        "@services": "./services",
+        "@screen-names": "./app/navigation/screen_names"
+      },
+      "extensions": [".js", ".ios.js", ".android.js"]
+    }]
+  ]
+}
